@@ -1,6 +1,6 @@
 Vagrant.configure("2") do |config|
   config.vm.box = "bento/ubuntu-20.04"
-  config.vm.synced_folder "./work", "/home/vagrant/work", create:"true"
+  config.vm.synced_folder "./", "/home/vagrant/work", create:"true"
   config.vm.network "forwarded_port", guest: 8000, host: 8000
   
   config.vm.provision "shell", inline: <<-SHELL
