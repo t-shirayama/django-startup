@@ -1,1 +1,1 @@
-"# django-startup" 
+# django-startup
